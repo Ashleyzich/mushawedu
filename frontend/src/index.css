@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #2F3A2F;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #063B18;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #063B18;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #063B18;
+  }
+}
+
+@layer components {
+  /* Left-bordered card — the core UI pattern */
+  .card-bordered {
+    @apply bg-white rounded-lg shadow-card border-l-4 border-maroon p-5;
+  }
+
+  /* Stat box */
+  .stat-box {
+    @apply bg-white rounded-xl p-6 text-center shadow-card;
+  }
+
+  /* Primary CTA button */
+  .btn-primary {
+    @apply bg-orange text-white rounded-md px-6 py-2.5 font-semibold
+           hover:opacity-90 transition-opacity duration-150 inline-flex items-center gap-2;
+  }
+
+  /* Secondary outline button */
+  .btn-outline {
+    @apply border-2 border-navy text-navy rounded-md px-6 py-2.5 font-semibold
+           hover:bg-navy hover:text-white transition-colors duration-150 inline-flex items-center gap-2;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    @apply text-navy font-semibold hover:text-orange transition-colors duration-150
+           inline-flex items-center gap-1;
+  }
+
+  /* Section wrapper */
+  .section-wrap {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Form input */
+  .form-input {
+    @apply w-full rounded-md border border-gray-300 px-4 py-2.5 text-body
+           focus:outline-none focus:ring-2 focus:ring-orange focus:border-transparent
+           placeholder-gray-400 bg-white;
+  }
+
+  /* Form label */
+  .form-label {
+    @apply block text-sm font-semibold text-navy mb-1;
+  }
+
+  /* Verified badge */
+  .badge-verified {
+    @apply inline-flex items-center gap-1 bg-green/10 text-green text-xs font-semibold
+           px-2 py-0.5 rounded-full;
+  }
+
+  /* Trade badge */
+  .badge-trade {
+    @apply inline-flex items-center gap-1 bg-maroon/10 text-maroon text-xs font-semibold
+           px-2 py-0.5 rounded-full;
+  }
+
+  /* Star rating */
+  .star-filled {
+    @apply text-orange;
+  }
+
+  .star-empty {
+    @apply text-gray-300;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.55s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out both;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B5D1E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D89A10;
+}
