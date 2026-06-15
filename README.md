@@ -1,4 +1,4 @@
-# Vaka — Zimbabwe's Construction Marketplace
+# Mushawedu — Zimbabwe's Construction Marketplace
 
 > *Connecting Homes, Skills, and Trust*
 
@@ -208,16 +208,16 @@ GET /api/projects/?search=Harare&status=open
 
 ## Academic Context
 
-**Project:** HIT 200 — Harare Institute of Technology  
+**Project:** Business plan project — Harare Institute of Technology  
 **Department:** Information Technology  
-**Team:** Pamela V Moyo · Prince Hofisi · Ashley Guveya · Mcklin Zirongodza  
-**Supervisor:** Mr P Mhaka  
+**Team:** Pamela V Moyo · Ashley Zichawo · Atonement Mutsvairo · Nigel Majaya · Godfrey Nhira · Blessing Rwodzi · Kingsley Mutondoro · Tawana Mafake 
+**Supervisor:** Ms Mataka 
 
 Built to address Zimbabwe's construction industry challenges:
-- 78% of homeowners report budget overruns
-- 65% struggle to find reliable artisans  
-- 40% of materials are wasted in typical projects
-- 83% of stakeholders lack digital planning resources
+- 72% of homeowners report budget overruns
+- 70% struggle to find reliable artisans  
+- 45% of materials are wasted in typical projects
+- 75% of stakeholders lack digital planning resources
 
 ---
 
